@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>DOM Physics Demo</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+      }
+
+      .box {
+        width: 200px;
+        height: 80px;
+        background: #222;
+        color: white;
+        margin: 20px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box">Physics Box 1</div>
+    <div class="box">Physics Box 2</div>
+    <div class="box">Physics Box 3</div>
+
+    <script type="module">
+      import { initPhysics } from "../src/index.js";
+      initPhysics(document.body);
+    </script>
+  </body>
+</html>
